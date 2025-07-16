@@ -2,11 +2,11 @@ version: "4"
 services:
   mysql:
     image: mysql:8.0
-    container_name: mysql
+    container_name: inventory_service_mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: inventory_service
     ports:
-      - "3307:3306"
+      - "3308:3306"
     volumes:
       - ./mysql_data:/var/lib/mysql

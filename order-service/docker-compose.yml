@@ -2,7 +2,7 @@ version: "4"
 services:
   mysql:
     image: mysql:8.0
-    container_name: mysql
+    container_name: order_service_mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: order_service
