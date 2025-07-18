@@ -13,6 +13,7 @@ export class OrderService {
   }
 
   orderProduct(order: Order): Observable<string> {
+    console.log("user details:", order.userDetails);
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
