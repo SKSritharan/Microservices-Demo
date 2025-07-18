@@ -5,7 +5,7 @@ export const authConfig: PassedInitialConfig = {
     authority: 'http://localhost:8181/realms/spring-microservices-security-realm',
     redirectUrl: window.location.origin,
     postLogoutRedirectUri: window.location.origin,
-    clientId: 'spring-client-credintials-id',
+    clientId: 'angular-client',
     scope: 'openid profile offline_access',
     responseType: 'code',
     silentRenew: true,
